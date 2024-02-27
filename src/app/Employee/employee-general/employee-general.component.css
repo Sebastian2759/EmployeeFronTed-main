@@ -1,0 +1,110 @@
+.ContainerEmployeeGeneral
+{
+  width: 100%;
+    display: flex;
+    place-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.subContainerEmployeeGeneral
+{
+  width: 55%;
+}
+.formulario
+{
+  display: flex;
+    width: 100%;
+    height: 65px;
+    align-items: center;
+}
+
+
+table{
+  text-align: center;
+}
+h1
+{
+  text-align: center;
+  color: #dfdfdf;
+  font-family: fantasy;
+  text-shadow: 8px 6px 0px #485b79;
+}
+label
+{
+  color: white;
+    width: 40%;
+    margin-left: 10px;
+}
+table{
+  font-family: monospace;
+  box-shadow: 2px 0px 20px 0px #ebd7ff;
+}
+.exception-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exception-message span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.exception-message button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.exception-message button:hover {
+  background-color: #c82333;
+}
+/* ------------------- */
+.container-employee-general {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-container-employee-general {
+  width: 80%;
+}
+
+.formulario {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  flex: 1 1 30%;
+}
+
+.employee-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.exception-message {
+  margin-top: 20px;
+  text-align: center;
+}
+input[type="text"] {
+  border: solid 1px black;
+  border-radius: 5px;
+  font-family: monospace;
+}
+input[type="number"] {
+  border: solid 1px black;
+  border-radius: 5px;
+  font-family: monospace;
+}

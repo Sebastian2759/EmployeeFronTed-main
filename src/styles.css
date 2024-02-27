@@ -1,0 +1,9 @@
+body{
+  background-image:linear-gradient(to right, #17181a, #022050);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #333;
+}

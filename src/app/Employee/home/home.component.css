@@ -1,0 +1,51 @@
+/* Estilos para el contenedor principal */
+.container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 13px 11px 20px 0px #00010d;
+}
+
+/* Estilos para el título */
+.container h1 {
+  font-size: 107px;
+  text-align: center;
+  color: #dfdfdf;
+  font-family: fantasy;
+  text-shadow: 8px 6px 0px #485b79;
+}
+
+/* Estilos para el enlace */
+.container h1 a {
+  color: #63b99b;
+  text-decoration: none;
+}
+
+/* Estilos para el enlace cuando está enfocado */
+.container h1 a:focus,
+.container h1 a:hover {
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  text-align: center;
+  color: #333; /* Color del texto */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  border-radius: 50%;
+  width: 20%; /* Ancho de la imagen */
+  box-shadow: -1px -2px 10px 5px #d3e8ff; /* Sombra */
+}

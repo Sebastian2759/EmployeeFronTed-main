@@ -1,0 +1,47 @@
+<div class="container-employee-general">
+  <div class="sub-container-employee-general">
+    <h1>Parámetros de búsqueda</h1>
+    <!-- Formulario del buscador -->
+    <form class="formulario">
+      <div class="form-group">
+        <label>Ingresa el nombre:</label>
+        <input type="text" [(ngModel)]="searchText" name="name" placeholder="Nombre del empleado" required (ngModelChange)="filterEmployeesByName()">
+      </div>
+      <div class="form-group">
+        <label>Ingresa el ID:</label>
+        <input type="number" [(ngModel)]="searchId" name="id" placeholder="ID del empleado" required (ngModelChange)="filterEmployeesById()">
+      </div>
+      <button class="btn btn-primary" (click)="SearchEmployee(searchId)">Consultar por ID</button>
+    </form>
+
+    <!-- Tabla de datos -->
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col" style="width: mi;">Imagen</th>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Salario</th>
+          <th scope="col">Salario Anual</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of employees">
+          <td>
+            <img src="{{item.urlImg}}" alt="Imagen del empleado" class="employee-image">
+          </td>
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.age }}</td>
+          <td>{{ formatSalary(item.salary) }}</td>
+          <td>{{ formatSalary(item.salaryAnual) }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="exception-message" *ngIf="exeption">
+      <span>{{ exeption }}</span>
+      <button class="btn btn-danger" (click)="closeException()">Cerrar</button>
+    </div>
+  </div>
+</div>
